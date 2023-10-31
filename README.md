@@ -48,4 +48,14 @@
 
 # Observations and Benefits of Using a CDN and Cloud Deployment
 
+- Faster loading time: the Youtube video I uploaded seemed like it loaded up much faster to be made available
+- Easier and faster to upload media on Azure
+- Less concern on if the video will still be available to view if the video is expired, removed from the creator's computer, etc
+  
 # Addressing Challenges Encountered
+
+A challenge that I had was trying to figure out how to deploy the flask app I created in Cloud Shell into Azure. I initially thought I was done with the assignment since I thought I only had to put the video that was uploaded into the Azure container into the flask app. However, after re-reading the instructions, I was realized that I was actually not done. I was googling how to deploy a flask app into Azure when I realized that we had actually done this before in a previous assignment in this class for Week 2. I went back to my repo and looked at the assignment. Then I ran into another error when I was trying to run this code:
+
+```az webapp up --name- <resource group> --flask --runtime PYTHON:3.9 --sku B1```
+
+I kept running into an error saying that the resource group I put in didn't exist. However, it was an easy fix because I forgot to remove these symbols "< >" from the code. I was then able to do all of the steps and complete the assignment.

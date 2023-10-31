@@ -33,6 +33,19 @@
 
 # Deploying your Flask App to the Chosen Cloud Platform
 
+1. In the Google shell terminal, type in curl ```-sL https://aka.ms/InstallAzureCLIDeb | sudo bash```
+2. Type in az.
+3. Type in az login --use-device-code to connect a Microsoft Azure account to Google shell.
+4. A separate window will open to a Microsoft page. Copy and paste the code from the Google shell into the Microsoft page and confirm that you want to authenticate. Once authentification is complete, you can go back to the Google shell terminal.
+5. Type ```az account list --output table into the shell terminal```
+6. Type ```az account set --subscription <subscriptionId>``` Replace "subscriptionId" with the subscriptionId under the desired account that was listed under the ```az account list --output table command```
+7. Log into Azure Web Portal and create a new resource group.
+8. In the Google shell terminal, type in ```az group list```
+9. Type in ```az webapp up --name- <resource group> --flask --runtime PYTHON:3.9 --sku B1```
+10. A resource group will be created and zip deployment will begin.
+11. Go to App Services to track the deployment process.
+12. Once deployment is complete, a link to the Azure domain will show on the App services page and in the Google shell terminal.
+
 # Observations and Benefits of Using a CDN and Cloud Deployment
 
 # Addressing Challenges Encountered

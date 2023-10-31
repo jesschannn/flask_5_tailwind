@@ -46,6 +46,8 @@
 11. Go to App Services to track the deployment process.
 12. Once deployment is complete, a link to the Azure domain will show on the App services page and in the Google shell terminal.
 
+Link: https://flask-tailwind.azurewebsites.net/
+
 # Observations and Benefits of Using a CDN and Cloud Deployment
 
 - Faster loading time: the Youtube video I uploaded seemed like it loaded up much faster to be made available
